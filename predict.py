@@ -31,7 +31,7 @@ for i in range(128):
     for j in range(128):
         out[i][j] = np.argmax(prediction[i][j])
         if(out[i][j] == 0):
-            segmentation_map[i,j] = (0,255,0)
+            segmentation_map[i,j] = (0,50,0)
         elif(out[i][j] == 1):
             segmentation_map[i,j] = (0,0,255)
         elif(out[i][j] == 2):
